@@ -47,6 +47,21 @@ It is designed for users who self-host Jellyfin and want a simple way to keep th
 
 ---
 
+## 📦 Requirements
+
+Before running the script, make sure you have the required Python packages installed.
+
+Install them using:
+
+```bash
+pip install -r requirements.txt
+```
+
+You also need to have Docker installed and accessible to the user running the script.  
+If you're using `sudo`, make sure Python and Docker are both available in the root environment.
+
+---
+
 ## 🚀 Usage
 
 Run the updater script manually:
