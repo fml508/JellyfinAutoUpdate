@@ -62,7 +62,23 @@ The script will:
 - Stop and remove the old container
 - Start Jellyfin with the updated image
 
-All actions are logged to `update.log`.
+---
+
+## 🕒 Automated Updates (Optional)
+
+To run the updater automatically every day, add the following line to your **root crontab** using `sudo crontab -e`:
+
+```bash
+@daily /usr/bin/python3 /path/to/dockerupdate.py >> /path/to/your/log/update.log 2>&1
+```
+
+This will:
+
+- Execute the updater script once per day
+- Redirect both standard output and error messages to `update.log`
+- Ensure the script runs with the necessary permissions (via `sudo`)
+
+Make sure to replace `/path/to/dockerupdate.py` and `/path/to/your/log/` with the actual paths on your system.
 
 ---
 
