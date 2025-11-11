@@ -52,7 +52,7 @@ It is designed for users who self-host Jellyfin and want a simple way to keep th
 Run the updater script manually:
 
 ```bash
-python3 dockerupdate.py
+sudo python3 dockerupdate.py
 ```
 
 The script will:
